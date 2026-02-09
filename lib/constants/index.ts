@@ -15,3 +15,12 @@ export const signUpDefaultValues = {
   password: '',
   confirmPassword: '',
 };
+
+
+export const shippingAddressDefaultValues = {
+  fullName: 'Audu John',
+  streetAddress: '12 Mainley street',
+  city: 'Gbagada',
+  postalCode: '100001',
+  country: 'Nigeria',
+};
