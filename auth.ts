@@ -112,7 +112,7 @@ export const config = {
       }
       return token;
     },
-    authorized({ request }: any) {
+    authorized({ auth, request }: any) {
 
       // Array of regex patterns of paths we want to protect
       const protectedPaths = [
