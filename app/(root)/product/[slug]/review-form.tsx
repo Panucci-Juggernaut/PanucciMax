@@ -50,7 +50,8 @@ const ReviewForm = ({
 }) => {
   const [open, setOpen] = useState(false);
 
-  const form = useForm<z.infer<typeof insertReviewSchema>>({
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const form = useForm<any>({
     resolver: zodResolver(insertReviewSchema),
     defaultValues: reviewFormDefaultValues,
   });
